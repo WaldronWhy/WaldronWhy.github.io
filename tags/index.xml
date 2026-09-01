@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Tags on 低 調&#39;s Blog</title>
+		<link>https://waldronwhy.github.io/tags/</link>
+		<description>Recent content in Tags on 低 調&#39;s Blog</description>
+		<generator>Hugo</generator>
+		<language>zh-CN</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 01 Sep 2026 10:00:00 +0800</lastBuildDate>
+		
+			<atom:link href="https://waldronwhy.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>公告</title>
+				<link>https://waldronwhy.github.io/tags/%E5%85%AC%E5%91%8A/</link>
+				<pubDate>Tue, 01 Sep 2026 10:00:00 +0800</pubDate>
+				<guid>https://waldronwhy.github.io/tags/%E5%85%AC%E5%91%8A/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>杂记</title>
+				<link>https://waldronwhy.github.io/tags/%E6%9D%82%E8%AE%B0/</link>
+				<pubDate>Tue, 01 Sep 2026 10:00:00 +0800</pubDate>
+				<guid>https://waldronwhy.github.io/tags/%E6%9D%82%E8%AE%B0/</guid>
+				<description></description>
+			</item>
+	</channel>
+</rss>

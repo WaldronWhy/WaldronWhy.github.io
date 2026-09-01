@@ -1,0 +1,12 @@
+{{ define "main" }}
+<section>
+  <h1>{{ .Site.Title }}</h1>
+  <p>{{ .Site.Params.description }}</p>
+</section>
+<h2>最新文章</h2>
+<ul class="post-list">
+{{ range .Site.RegularPages }}
+  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> <span class="post-meta">· {{ .Date.Format "2006-01-02" }}</span></li>
+{{ end }}
+</ul>
+{{ end }}

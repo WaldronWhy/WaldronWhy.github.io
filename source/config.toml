@@ -1,0 +1,9 @@
+baseURL = "https://waldronwhy.github.io/"
+languageCode = "zh-CN"
+title = "低 調's Blog"
+paginate = 5
+enableGitInfo = false
+
+[params]
+  author = "WaldronWhy"
+  description = "吴涵瑜的技术随笔 · 大模型 / AIGC / 算法工程"

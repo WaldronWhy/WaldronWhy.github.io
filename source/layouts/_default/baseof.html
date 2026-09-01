@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="{{ .Site.LanguageCode }}">
 <head>
-	<meta name="generator" content="Hugo 0.165.0">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>低 調&#39;s Blog</title>
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
 <style>
   :root { color-scheme: dark; }
   * { box-sizing: border-box; }
@@ -26,20 +25,9 @@
 </head>
 <body>
 <div class="wrap">
-  <header><a class="site-title" href="/"><strong>低 調&#39;s Blog</strong></a></header>
-  
-<section>
-  <h1>低 調&#39;s Blog</h1>
-  <p>吴涵瑜的技术随笔 · 大模型 / AIGC / 算法工程</p>
-</section>
-<h2>最新文章</h2>
-<ul class="post-list">
-
-  <li><a href="/posts/welcome/">站点重建完成</a> <span class="post-meta">· 2026-09-01</span></li>
-
-</ul>
-
-  <footer>© 2026 低 調&#39;s Blog · Powered by Hugo</footer>
+  <header><a class="site-title" href="/"><strong>{{ .Site.Title }}</strong></a></header>
+  {{ block "main" . }}{{ end }}
+  <footer>© {{ now.Year }} {{ .Site.Title }} · Powered by Hugo</footer>
 </div>
 </body>
 </html>
