@@ -1,13 +1,13 @@
 baseURL = "https://waldronwhy.github.io/"
 languageCode = "zh-CN"
 defaultContentLanguage = "zh"
-title = "低 調's Blog"
+title = "小澍's Blog"
 paginate = 7
 theme = "PaperMod"
 
 [params]
-  author = "吴涵瑜"
-  description = "吴涵瑜的技术随笔 · 大模型 / AIGC / 算法工程"
+  author = "小澍"
+  description = "小澍的技术随笔 · 大模型 / AIGC / 算法工程"
   # 默认暗色，符合你之前的风格
   defaultTheme = "dark"
   disableThemeToggle = false
@@ -25,12 +25,8 @@ theme = "PaperMod"
   # 首页个人卡片（头像 + 名字 + 简介 + 社交 + 按钮）
   [params.profileMode]
     enabled = true
-    title = "吴涵瑜"
-    subtitle = "浙江机电职业技术大学 · 人工智能学院 · 关注大模型 / AIGC / 算法工程"
-    imageUrl = "/avatar.svg"
-    imageWidth = 160
-    imageHeight = 160
-    imageTitle = "吴涵瑜"
+    title = "小澍"
+    subtitle = "关注大模型 / AIGC / 算法工程"
     # 首页两个按钮
     [[params.profileMode.buttons]]
       name = "阅读文章"

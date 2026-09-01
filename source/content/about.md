@@ -1,12 +1,12 @@
 ---
 title: "关于"
-description: "关于我 —— 吴涵瑜 / WaldronWhy"
+description: "关于我 —— 小澍 / WaldronWhy"
 layout: "page"
 ---
 
-你好，我是 **吴涵瑜**（GitHub: [@WaldronWhy](https://github.com/WaldronWhy)）。
+你好，我是 **小澍**（GitHub: [@WaldronWhy](https://github.com/WaldronWhy)）。
 
-目前就读于 **浙江机电职业技术大学 · 人工智能学院**，方向聚焦 **大模型 / AIGC / 算法工程**，同时也对化学交叉创新保持兴趣。
+方向聚焦 **大模型 / AIGC / 算法工程**，同时也对化学交叉创新保持兴趣。
 
 ## 我关心的事
 
