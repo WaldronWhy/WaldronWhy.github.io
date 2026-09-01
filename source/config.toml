@@ -1,9 +1,51 @@
 baseURL = "https://waldronwhy.github.io/"
 languageCode = "zh-CN"
 title = "低 調's Blog"
-paginate = 5
-enableGitInfo = false
+paginate = 7
+theme = "PaperMod"
 
 [params]
-  author = "WaldronWhy"
+  author = "吴涵瑜"
   description = "吴涵瑜的技术随笔 · 大模型 / AIGC / 算法工程"
+  # 默认暗色，符合你之前的风格
+  defaultTheme = "dark"
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  hideFooter = false
+  # 把 “Labels” 改成中文
+  labels.text = "标签"
+
+  # 社交链接（页脚/首页展示，按需删改）
+  [params.social]
+    github = "https://github.com/WaldronWhy"
+
+# 开启站内搜索（需 JSON 输出）
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# 顶部导航
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "tags"
+    name = "标签"
+    url = "/tags/"
+    weight = 20
+  [[menu.main]]
+    identifier = "categories"
+    name = "分类"
+    url = "/categories/"
+    weight = 30
+  [[menu.main]]
+    identifier = "search"
+    name = "搜索"
+    url = "/search/"
+    weight = 40
