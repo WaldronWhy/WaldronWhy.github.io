@@ -1,5 +1,6 @@
 baseURL = "https://waldronwhy.github.io/"
 languageCode = "zh-CN"
+defaultContentLanguage = "zh"
 title = "低 調's Blog"
 paginate = 7
 theme = "PaperMod"
@@ -18,10 +19,34 @@ theme = "PaperMod"
   hideFooter = false
   # 把 “Labels” 改成中文
   labels.text = "标签"
+  # 日期显示为中文（如 2026年09月01日）
+  DateFormat = "2006年01月02日"
+
+  # 首页个人卡片（头像 + 名字 + 简介 + 社交 + 按钮）
+  [params.profileMode]
+    enabled = true
+    title = "吴涵瑜"
+    subtitle = "浙江机电职业技术大学 · 人工智能学院 · 关注大模型 / AIGC / 算法工程"
+    imageUrl = "/avatar.svg"
+    imageWidth = 160
+    imageHeight = 160
+    imageTitle = "吴涵瑜"
+    # 首页两个按钮
+    [[params.profileMode.buttons]]
+      name = "阅读文章"
+      url = "/posts/"
+    [[params.profileMode.buttons]]
+      name = "关于我"
+      url = "/about/"
 
   # 社交链接（页脚/首页展示，按需删改）
   [params.social]
     github = "https://github.com/WaldronWhy"
+
+  # 资源（favicon 等）
+  [params.assets]
+    favicon = "/favicon.svg"
+    theme_color = "#0f1115"
 
 # 开启站内搜索（需 JSON 输出）
 [outputs]
@@ -45,7 +70,12 @@ theme = "PaperMod"
     url = "/categories/"
     weight = 30
   [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 40
+  [[menu.main]]
     identifier = "search"
     name = "搜索"
     url = "/search/"
-    weight = 40
+    weight = 50

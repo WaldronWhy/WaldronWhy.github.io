@@ -1,0 +1,34 @@
+/* ===========================================================
+   自定义主题强调色 —— 科技青蓝（sky/cyan）
+   只覆盖暗色模式，亮色保持主题默认。
+   想换颜色改下面两处即可：
+     --primary          : 链接 / 标题 / 强调色
+     hover 处更亮的色    : 鼠标悬停高亮
+   =========================================================== */
+
+:root[data-theme="dark"] {
+  --primary: #38bdf8;          /* 主强调色：青蓝 */
+}
+
+/* 链接 / 文章标题悬停时更亮一点，增加层次 */
+:root[data-theme="dark"] a:hover,
+:root[data-theme="dark"] .post-entry:hover .entry-header h2 {
+  color: #7dd3fc;
+}
+
+/* 选中文字时呼应主题色 */
+:root[data-theme="dark"] ::selection {
+  background: rgba(56, 189, 248, 0.35);
+  color: #ffffff;
+}
+
+/* 顶部导航当前页高亮 */
+:root[data-theme="dark"] #menu a.active,
+:root[data-theme="dark"] #menu a[aria-current="page"] {
+  color: var(--primary);
+}
+
+/* 首页 profile 名字也点一下主题色，更统一 */
+:root[data-theme="dark"] .profile_inner h1 {
+  color: var(--primary);
+}
